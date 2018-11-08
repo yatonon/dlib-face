@@ -1,8 +1,8 @@
 #!/usr/bin/python
-import pdb
 import os
 import sys
 import glob
+import re
 
 import dlib
 from skimage import io
@@ -31,6 +31,7 @@ for f in glob.glob(os.path.join(faces_folder, "*.jpg")):
     win.set_image(img)
     win.add_overlay(dets)
 
+filename = re.search('([^/]+?)?$' , f)
 num = 0
 while num < 1:
     print("it's correct? y/n if y, I will learn this image.")
@@ -44,7 +45,7 @@ while num < 1:
 
         with open('/Users/toyoda/Desktop/read.xml') as f:
             l = f.readlines()
-            l.insert(6,'<image file=\'***.jpg\'>\n')
+            l.insert(6,'<image file=\''+filename.group()+'\'>\n')
             l.insert(7,'</image>\n')
             for index, item in enumerate(datasets):
                 print("インデックス：" + str(index) + ", 値：" + item)
