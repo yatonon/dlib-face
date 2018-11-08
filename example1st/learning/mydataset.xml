@@ -4,6 +4,13 @@
 <name>imglab dataset</name>
 <comment>Created by imglab tool.</comment>
 <images>
+<image file='arashi.jpg'>
+<box top='245' left='344' width='80' height='100'/>
+<box top='295' left='185' width='80' height='100'/>
+<box top='56' left='175' width='80' height='100'/>
+<box top='166' left='86' width='79' height='99'/>
+<box top='80' left='330' width='96' height='119'/>
+</image>
   <image file='2007_007763.jpg'>
     <box top='75' left='293' width='56' height='54'/>
     <box top='83' left='392' width='61' height='57'/>
