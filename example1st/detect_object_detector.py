@@ -1,4 +1,5 @@
 #!/usr/bin/python
+import pdb
 import os
 import sys
 import glob
@@ -34,13 +35,25 @@ num = 0
 while num < 1:
     print("it's correct? y/n if y, I will learn this image.")
     answer = input('>> ')
-    
+
     if answer == 'y':
+        datasets = []
         for k, d in enumerate(dets):
-            print("<box top=\'{}\' left=\'{}\' width=\'{}\' height=\'{}\'/>".format(
+            datasets.append("<box top=\'{}\' left=\'{}\' width=\'{}\' height=\'{}\'/>".format(
             d.top(), d.left(), d.right()-d.left(), d.bottom()-d.top()))
 
+        with open('/Users/toyoda/Desktop/read.xml') as f:
+            l = f.readlines()
+            l.insert(6,'<image file=\'***.jpg\'>\n')
+            l.insert(7,'</image>\n')
+            for index, item in enumerate(datasets):
+                print("インデックス：" + str(index) + ", 値：" + item)
+                l.insert(index+7, item+'\n')
+
+        with open('/Users/toyoda/Desktop/read.xml', mode='w') as f:
+            f.writelines(l)
         num = 1
+
     elif answer == 'n':
         print('ok,this image isn\'t learning.')
         num = 1
