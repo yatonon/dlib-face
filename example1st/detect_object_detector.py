@@ -29,4 +29,20 @@ for f in glob.glob(os.path.join(faces_folder, "*.jpg")):
     win.clear_overlay()
     win.set_image(img)
     win.add_overlay(dets)
+
+nnum = 0
+while num < 1:
+    print("it's correct? y/n if y, I will learn this image.")
+    answer = input('>> ')
+    if answer == 'y':
+
+
+
+        num = 1
+    elif answer == 'n':
+        print('ok,this image isn\'t learning.')
+        num = 1
+    else:
+        print('you should tap y or n.')
+
     dlib.hit_enter_to_continue()
