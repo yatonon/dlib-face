@@ -30,13 +30,15 @@ for f in glob.glob(os.path.join(faces_folder, "*.jpg")):
     win.set_image(img)
     win.add_overlay(dets)
 
-nnum = 0
+num = 0
 while num < 1:
     print("it's correct? y/n if y, I will learn this image.")
     answer = input('>> ')
+    
     if answer == 'y':
-
-
+        for k, d in enumerate(dets):
+            print("<box top=\'{}\' left=\'{}\' width=\'{}\' height=\'{}\'/>".format(
+            d.top(), d.left(), d.right()-d.left(), d.bottom()-d.top()))
 
         num = 1
     elif answer == 'n':
