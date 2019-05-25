@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<?xml-stylesheet type='text/xsl' href='image_metadata_stylesheet.xsl'?>
+<dataset>
+<name>imglab dataset</name>
+<comment>Created by imglab tool.</comment>
+<images>
+<image file='2018-11-13 3.27.13.jpg'>
+<box top='73' left='445' width='330' height='413'/>
+</image>
+<image file='2018-11-13 3.27.43.jpg'>
+<box top='61' left='336' width='275' height='344'/>
+</image>
+<image file='2018-11-13 3.27.24.jpg'>
+<box top='32' left='280' width='330' height='413'/>
+</image>
+<image file='2018-11-13 3.27.34.jpg'>
+<box top='73' left='321' width='330' height='413'/>
+</image>
+  <image file='2018-11-13 3.24.35.jpg'>
+    <box top='17' left='249' width='679' height='573'/>
+  </image>
+  <image file='2018-11-13 3.24.44.jpg'>
+    <box top='135' left='376' width='341' height='411'/>
+  </image>
+  <image file='2018-11-13 3.24.50.jpg'>
+    <box top='83' left='286' width='476' height='465'/>
+  </image>
+  <image file='2018-11-13 3.24.57.jpg'>
+    <box top='43' left='295' width='332' height='350'/>
+  </image>
+  <image file='2018-11-13 3.25.05.jpg'>
+    <box top='43' left='349' width='382' height='397'/>
+  </image>
+  <image file='2018-11-13 3.25.11.jpg'>
+    <box top='49' left='282' width='416' height='461'/>
+  </image>
+  <image file='2018-11-13 3.25.28.jpg'>
+    <box top='92' left='429' width='306' height='408'/>
+  </image>
+  <image file='2018-11-13 3.25.34.jpg'>
+    <box top='31' left='314' width='209' height='258'/>
+  </image>
+  <image file='2018-11-13 3.25.44.jpg'>
+    <box top='108' left='363' width='225' height='233'/>
+  </image>
+  <image file='2018-11-13 3.26.05.jpg'>
+    <box top='54' left='415' width='323' height='411'/>
+  </image>
+  <image file='2018-11-13 3.26.17.jpg'>
+    <box top='45' left='299' width='328' height='415'/>
+  </image>
+  <image file='2018-11-13 3.26.29.jpg'>
+    <box top='14' left='291' width='365' height='424'/>
+  </image>
+  <image file='2018-11-13 3.26.38.jpg'>
+    <box top='43' left='204' width='364' height='392'/>
+  </image>
+  <image file='2018-11-13 3.26.44.jpg'>
+    <box top='30' left='188' width='500' height='501'/>
+  </image>
+  <image file='2018-11-13 3.26.50.jpg'>
+    <box top='149' left='349' width='244' height='317'/>
+  </image>
+</images>
+</dataset>
