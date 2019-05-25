@@ -26,6 +26,17 @@ dlib-19.13/tools/imglab/build/CMakeCache.txt
 DLIB_NO_GUI_SUPPORT:STRING=OFF
 の OFF を ON に変更します
 
+使い方
+example1stをコピー
+learning に学習用の画像を入れる(jpg)
+learning で必要なファイルを作成
+imglab -c mydataset.xml .
+画像の読み取り範囲を指定するコマンド
+imglab mydataset.xml
+学習を実行
+python3 train_object_detector.py learning
+テスト検出
+python3 detect_object_detector.py test
 
 
 
